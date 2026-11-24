@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conexão Digital | Ana Luiza</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #183047;
+      background: #f2f6fb;
+      line-height: 1.7;
+    }
+    .hero {
+      color: white;
+      padding: 58px 22px 66px;
+      background: linear-gradient(125deg, #102b50 0%, #155b86 58%, #19a6a6 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero:after {
+      content: "";
+      position: absolute;
+      width: 340px; height: 340px;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      right: -90px; top: -140px;
+      box-shadow: 0 0 0 35px rgba(255,255,255,.04), 0 0 0 75px rgba(255,255,255,.035);
+    }
+    .hero-inner, .container { max-width: 980px; margin: auto; position: relative; }
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 13px;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 30px;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 66px);
+      line-height: 1.05;
+      margin: 18px 0 12px;
+      letter-spacing: -2px;
+    }
+    .hero h2 {
+      font-size: clamp(18px, 3vw, 25px);
+      font-weight: 400;
+      max-width: 660px;
+      margin: 0 0 22px;
+      color: #e1f7fa;
+    }
+    .author { font-size: 14px; color: #d4edf3; }
+    nav {
+      background: white;
+      border-bottom: 1px solid #e2eaf1;
+      padding: 12px 20px;
+      text-align: center;
+    }
+    nav a {
+      display: inline-block;
+      color: #17617c;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 13px;
+      margin: 5px 10px;
+    }
+    nav a:hover { color: #0c9b9b; }
+    .container { padding: 38px 20px 55px; }
+    .intro {
+      background: white;
+      border-radius: 18px;
+      padding: 25px 28px;
+      margin-bottom: 25px;
+      border-left: 5px solid #19a6a6;
+      box-shadow: 0 8px 24px rgba(23,55,83,.06);
+    }
+    .intro strong { color: #087e88; }
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+    article {
+      background: white;
+      border: 1px solid #e5edf3;
+      border-radius: 17px;
+      padding: 23px 24px;
+      box-shadow: 0 8px 24px rgba(23,55,83,.045);
+    }
+    article h2 {
+      color: #145b7a;
+      font-size: 20px;
+      line-height: 1.3;
+      margin: 0 0 12px;
+    }
+    article p { margin: 0 0 12px; }
+    article p:last-child { margin-bottom: 0; }
+    .wide { grid-column: 1 / -1; }
+    .number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px; height: 30px;
+      border-radius: 9px;
+      background: #e1f5f3;
+      color: #087e88;
+      font-size: 14px;
+      margin-right: 8px;
+    }
+    .tips {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+    .tips li { margin: 7px 0; }
+    .quote {
+      background: #eaf7f7;
+      color: #155b68;
+      border-radius: 13px;
+      padding: 18px 20px;
+      font-weight: bold;
+      margin-top: 14px;
+    }
+    .sources a { color: #087e88; overflow-wrap: anywhere; }
+    footer {
+      background: #102b50;
+      color: #d6e8f0;
+      text-align: center;
+      padding: 25px 18px;
+      font-size: 13px;
+    }
+    @media (max-width: 680px) {
+      .section-grid { grid-template-columns: 1fr; }
+      .wide { grid-column: auto; }
+      .intro, article { padding: 21px; }
+      nav a { margin: 4px 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="eyebrow">Blog educativo • 2ª série do Ensino Médio</span>
+      <h1>CONEXÃO<br>DIGITAL<span style="color:#73e1d7">.</span></h1>
+      <h2>Tecnologia, conhecimento e segurança no mundo conectado</h2>
+      <div class="author">Produzido por <strong>Ana Luiza</strong></div>
+    </div>
+  </header>
+
+  <nav aria-label="Navegação do blog">
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#internet">Internet</a>
+    <a href="#informacao">Informação</a>
+    <a href="#seguranca">Segurança</a>
+    <a href="#redes">Redes sociais</a>
+    <a href="#ia">Inteligência artificial</a>
+  </nav>
+
+  <main class="container">
+    <section class="intro">
+      <strong>Bem-vindo(a) ao Conexão Digital!</strong>
+      <p>
+        A tecnologia faz parte da nossa rotina: está no celular que usamos para conversar,
+        nas ferramentas que ajudam nos estudos e nos serviços que acessamos pela internet.
+        Neste espaço, vamos conhecer melhor esse universo e refletir sobre como utilizá-lo
+        de forma consciente, responsável e segura.
+      </p>
+    </section>
+
+    <div class="section-grid">
+      <article id="tecnologia">
+        <h2><span class="number">01</span>A tecnologia está em todo lugar</h2>
+        <p>
+          A tecnologia reúne conhecimentos, ferramentas e recursos criados para solucionar
+          problemas e facilitar atividades humanas. Ela está presente na educação, na saúde,
+          nos transportes, na comunicação e em diversas profissões.
+        </p>
+        <p>
+          Na escola, podemos utilizar computadores e plataformas digitais para pesquisar,
+          produzir trabalhos, assistir a aulas e compartilhar conhecimentos. No cotidiano,
+          aplicativos ajudam a conversar, consultar mapas e acessar serviços.
+        </p>
+      </article>
+
+      <article id="internet">
+        <h2><span class="number">02</span>A internet: um espaço de oportunidades</h2>
+        <p>
+          A internet conecta pessoas, instituições e informações. Por meio dela, podemos
+          aprender sobre novos assuntos, conhecer diferentes culturas, acompanhar notícias
+          e divulgar produções próprias.
+        </p>
+        <p>
+          Entretanto, encontrar uma informação na internet não significa que ela seja
+          verdadeira. É necessário desenvolver o pensamento crítico e avaliar aquilo que
+          lemos antes de acreditar ou compartilhar.
+        </p>
+      </article>
+
+      <article id="informacao">
+        <h2><span class="number">03</span>Como identificar informações confiáveis?</h2>
+        <p>
+          Antes de compartilhar uma notícia, verifique a origem do conteúdo. Procure identificar
+          o autor ou a instituição responsável, observe a data da publicação e confira se a
+          informação também aparece em outras fontes confiáveis.
+        </p>
+        <p>
+          Desconfie de títulos exagerados, textos que pedem compartilhamento imediato ou
+          publicações sem fontes. Pesquisar o assunto em mais de um local ajuda a evitar
+          a divulgação de informações falsas.
+        </p>
+      </article>
+
+      <article id="seguranca">
+        <h2><span class="number">04</span>Segurança e privacidade na internet</h2>
+        <p>
+          Nossos dados pessoais merecem proteção. Nome completo, endereço, telefone, senhas,
+          documentos e localização podem ser utilizados indevidamente quando compartilhados
+          sem cuidado.
+        </p>
+        <ul class="tips">
+          <li>Crie senhas fortes e diferentes para cada conta.</li>
+          <li>Não compartilhe senhas ou códigos de acesso.</li>
+          <li>Desconfie de links e mensagens suspeitas.</li>
+          <li>Confira se o site é legítimo antes de informar dados.</li>
+          <li>Mantenha aplicativos e dispositivos atualizados.</li>
+        </ul>
+      </article>
+
+      <article id="redes">
+        <h2><span class="number">05</span>Respeito e responsabilidade nas redes sociais</h2>
+        <p>
+          As redes sociais são espaços de interação. Por trás de cada perfil existe uma pessoa,
+          que merece ser tratada com respeito. Comentários ofensivos, exposição de imagens sem
+          autorização, ameaças e humilhações podem causar danos reais.
+        </p>
+        <p>
+          Antes de publicar ou comentar, pense nas consequências. Respeite opiniões diferentes,
+          não participe de ataques virtuais e não divulgue fotos ou informações de outras
+          pessoas sem permissão.
+        </p>
+      </article>
+
+      <article id="ia">
+        <h2><span class="number">06</span>Inteligência artificial: como usar com consciência?</h2>
+        <p>
+          Ferramentas de inteligência artificial podem auxiliar na organização de ideias,
+          na pesquisa, na tradução e na aprendizagem. Porém, elas também podem apresentar
+          informações incorretas ou incompletas.
+        </p>
+        <p>
+          É importante conferir as respostas em fontes confiáveis, não inserir informações
+          pessoais ou sigilosas e utilizar essas ferramentas como apoio, sem deixar de
+          desenvolver o próprio pensamento e a criatividade.
+        </p>
+      </article>
+
+      <article class="wide">
+        <h2><span class="number">07</span>Conectados com responsabilidade</h2>
+        <p>
+          A tecnologia oferece oportunidades para aprender, criar, comunicar e transformar
+          a sociedade. Ao mesmo tempo, exige atenção, respeito e responsabilidade. Ser um
+          usuário consciente significa verificar informações, proteger os próprios dados
+          e respeitar as outras pessoas.
+        </p>
+        <div class="quote">
+          A internet é uma ferramenta poderosa. O modo como escolhemos utilizá-la faz toda a diferença!
+        </div>
+      </article>
+
+      <article class="wide sources">
+        <h2>Fontes consultadas</h2>
+        <p>
+          <strong>MDN Web Docs – Aprendendo desenvolvimento web.</strong>
+          Material de referência sobre tecnologias e conteúdos da web.
+          Disponível em:
+          <a href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development">
+            https://developer.mozilla.org/pt-BR/docs/Learn_web_development
+          </a>.
+        </p>
+        <p>
+          <strong>SaferNet Brasil.</strong>
+          Organização que desenvolve ações de educação e orientação para o uso seguro
+          e responsável da internet.
+          Disponível em:
+          <a href="https://new.safernet.org.br/">https://new.safernet.org.br/</a>.
+        </p>
+        <p><strong>Autoria:</strong> Ana Luiza – 2ª série do Ensino Médio.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    Conexão Digital • Projeto de Programação • Desenvolvido por Ana Luiza
+  </footer>
+</body>
+</html>
